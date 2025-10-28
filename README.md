@@ -56,7 +56,7 @@ Os dados são armazenados localmente utilizando o Sqflite, garantindo acesso off
 
 ---
 
-## 🧠 Boas Práticas de Engenharia
+### 🧠 Boas Práticas de Engenharia
 - Redução de acoplamento entre camadas.
 - Reuso de componentes e consistência visual.
 - Responsabilidade única em cada classe.
@@ -67,6 +67,21 @@ Os dados são armazenados localmente utilizando o Sqflite, garantindo acesso off
 
 ### 📱 Objetivo
 Oferecer uma solução moderna, performática e escalável para gestão de controle de acesso a eventos, com foco em UX, arquitetura limpa e qualidade de código.
+
+---
+
+### ▶️ Executando o projeto
+
+```bash
+# Instalação do projeto
+flutter pub get
+
+# Executar em modo desenvolvimento  
+flutter run --profile --dart-define-from-file=.env/dev_env.json
+
+# Build para produção
+flutter build apk --release --dart-define-from-file=.env/dev_env.json
+```
 
 ---
 
